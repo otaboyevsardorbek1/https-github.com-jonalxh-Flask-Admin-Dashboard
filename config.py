@@ -1,5 +1,7 @@
+import os
+
 # Create dummy secrey key so we can use sessions
-SECRET_KEY = '123456790'
+SECRET_KEY = os.environ('SECRET_KEY')
 
 # Create in-memory database
 DATABASE_FILE = 'sample_db.sqlite'
